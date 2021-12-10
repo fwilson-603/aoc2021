@@ -1,19 +1,6 @@
-# Advent of Code 2021; Dec 3, first puzzle
+# Advent of Code 2021; Dec 3, second puzzle
 
-## DOESN'T WORK YET
-
-## start with the full list of binary numbers
-## consider the first bit of those numbers
-## keep only the numbers selected by the bit criteria
-## if you have only one number left, stop
-## if there is more than one number, repeat the process
-
-## bit criteria: for oxygen, most common value in the position
-## keep only numbers with that bit in that position
-## if 0 and 1 are equally common, keep values with 1
-
-## c02 scrubber rating, keep only least common value
-## if 0 and 1 are equally common, keep 0
+## SUCCESSFULLY SUBMITTED
 
 # import needed material
 import statistics
@@ -31,20 +18,6 @@ for x in input:
 # calculate length of binary input items
 test_item = str(binary_values[0])
 length_of_items = len(test_item)
-
-# start with the full list of binary numbers
-# consider just the first bit of those numbers
-
-# keep only numbers selected by the bit criteria for the 
-# type of rating value for which you are searching
-# if you have only one number left, stop
-# otherwise, repeat the process, considering
-# the next bit to the right
-
-# for oxygen generator rating
-# most common value in the current bit position
-# keep only numbers with that bit in that position
-# if 0 and 1 are equally common, keep values with a 0 in the position
 
 # function for finding oxygen generator rating
 def oxy_gen_calculate():
